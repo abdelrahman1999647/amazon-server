@@ -7,7 +7,7 @@ const authRouter =require('./routes/auth');
 const productRouter = require('./routes/product');
 const userRouter = require('./routes/users');
 
-const PORT = 3000;
+const PORT = process.env.PORT || 3000;
 
 const app = express();
 const DB = "mongodb+srv://abdelrahman:abdo1999@cluster0.xkftvkc.mongodb.net/?retryWrites=true&w=majority"
